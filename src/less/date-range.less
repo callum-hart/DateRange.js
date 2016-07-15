@@ -1,0 +1,28 @@
+@drWidth: 350px;
+@drBorder: 1px solid rgba(175,178,185,1);
+@drLightGrey: rgba(206,208,212,1);
+
+// ************************************************************
+// Scaffolding
+// ************************************************************
+
+.dr-container {
+  float: left;
+  width: @drWidth;
+}
+
+// ************************************************************
+// UI
+// ************************************************************
+
+.dr-container {
+  border: @drBorder;
+
+  .dj-container {
+    border: none;
+  }
+
+  .first-dj {
+    box-shadow: -1px 0 0 @drLightGrey inset;
+  }
+}
