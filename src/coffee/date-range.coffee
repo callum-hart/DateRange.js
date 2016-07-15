@@ -33,15 +33,19 @@ class DateRange
   version: "0.1.1"
 
   constructor: (selector, options) ->
-    @handleElm selector
+    if DateJust?
+      @handleElm selector
 
-    if @elm
-      @options = Utils.extend {}, @defaultOptions, options
-      @handleTemplate()
-      @handleDateJust()
-      @handleHooks()
+      if @elm
+        @options = Utils.extend {}, @defaultOptions, options
+        @handleTemplate()
+        @handleDateJust()
+        @handleHooks()
+      else
+        console.warn "DateRange couldn't initialize #{selector} as it's not in the DOM"
     else
-      console.warn "DateRange couldn't initialize #{selector} as it's not in the DOM"
+      console.error "DateRange couldn't initialize because the dependency DateJust is missing. See https://github.com/callum-hart/DateRange.js#dependencies for more info."
+
 
   # You can initialize DateRange with a class/id selector or with an actual DOM element.
   handleElm: (selector) ->
