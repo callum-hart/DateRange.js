@@ -1,6 +1,8 @@
 # DateRange.js
 
-<!-- Todo -->
+DateRange.js is the bigger brother of [DateJust.js](https://github.com/callum-hart/DateJust.js).
+
+It is a **datepicker** for choosing **dates across multiple months**. Like its sibling you can scroll to change month.
 
 ##### Getting Started
 
