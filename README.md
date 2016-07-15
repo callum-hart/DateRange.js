@@ -82,14 +82,14 @@ var instance = new DateRange(element, { options });
 
 ### minDate
 
-- **Details** Minimum date the calendar can go to.
+- **Details** Minimum date each calendar can go to.
 - **Type** `<Date>`
 - **Default** `January 10 years in the past (from todays date)`
 - **Usage** `minDate: new Date(2010, 5, 10)`
 
 ### maxDate
 
-- **Details** Maximum date the calendar can go to.
+- **Details** Maximum date each calendar can go to.
 - **Type** `<Date>`
 - **Default** `January 10 years in the future (from todays date)`
 - **Usage** `maxDate: new Date(2020, 5, 10)`
