@@ -40,7 +40,6 @@ A demo of the library in action can be [found here](http://www.callumhart.com/op
 - Opera :white_check_mark:
 - Firefox :white_check_mark:
 - ~~Safari~~ known issues (inherited from DateJust.js):
-  - Left arrow facing right :point_left:
   - Scroll control isn't as smooth as other browsers.
 
 ### Dependencies
